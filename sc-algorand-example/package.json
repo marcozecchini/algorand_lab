@@ -1,0 +1,20 @@
+{
+  "name": "algorand-example",
+  "version": "1.0.0",
+  "description": "Example of integrating IoT and algorand",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "iot",
+    "algorand",
+    "blockchain"
+  ],
+  "author": "marcozecchini",
+  "license": "ISC",
+  "dependencies": {
+    "algosdk": "^1.8.1",
+    "mqtt": "^3.0.0"
+  }
+}

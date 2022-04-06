@@ -1,0 +1,30 @@
+#pragma version 2
+global GroupSize
+int 2
+==
+gtxn 0 TypeEnum
+int 1
+==
+&&
+gtxn 1 TypeEnum
+int 1
+==
+&&
+gtxn 1 Receiver
+addr NQEXN2E3LYN42FY5PMPPQXJQFN7KHP3VHQGWJK2G46AU5UHWTPLAQTQ76I
+==
+&&
+gtxn 1 Receiver
+gtxn 0 Sender
+==
+&&
+gtxn 1 Amount
+int 1000
+==
+&&
+gtxn 0 Note
+btoi
+int 1000
+>=
+&&
+return

@@ -1,0 +1,5 @@
+.idea/
+quadrilemma.iml
+node_modules/
+environment.js
+pyteal/.vscode
