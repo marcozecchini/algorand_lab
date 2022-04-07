@@ -143,6 +143,7 @@ module.exports.callApp = async function(client, account, index, appArgs) {
 
 // read global state of application
 module.exports.readGlobalState = async function(client, address, index){
+    console.log(`========== READ GLOBAL STATE OF APP ${index} ==========`)
     let resultMap = {}
     let accountInfoResponse = await client.accountInformation(address).do();
     for (let i = 0; i < accountInfoResponse['created-apps'].length; i++) {
@@ -176,6 +177,7 @@ module.exports.readGlobalState = async function(client, address, index){
                 resultMap[key] = value;
 
             }
+            console.log(`========== END OF THE READING ==========`)
             return resultMap;
         }
     }

@@ -1,3 +1,4 @@
+from ensurepip import version
 from pyteal import *
 
 
@@ -92,10 +93,10 @@ def clear_state_program():
 
 
 if __name__ == "__main__":
-    with open('./pyteal/clear_text_stateful.teal', 'w') as f:
-        compiled = compileTeal(approval_program(), Mode.Application)
+    with open('./clear_text_stateful.teal', 'w') as f:
+        compiled = compileTeal(approval_program(), Mode.Application, version=4)
         f.write(compiled)
 
-    with open('./pyteal/clear_text_clear_state.teal', 'w') as f:
-        compiled = compileTeal(clear_state_program(), Mode.Application)
+    with open('./clear_text_clear_state.teal', 'w') as f:
+        compiled = compileTeal(clear_state_program(), Mode.Application,version=4)
         f.write(compiled)
