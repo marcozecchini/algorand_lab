@@ -41,7 +41,7 @@ fs.readFile('./contract/example_sc.teal', 'utf8', (err, data) => {
     if (err) throw err;
     util.compileProgram(algodclient, data).then(async (program) => {
         escrow = algosdk.makeLogicSig(program);
-        console.log(escrow.address())
+        console.log("Contract address:", escrow.address())
     });
 });
 

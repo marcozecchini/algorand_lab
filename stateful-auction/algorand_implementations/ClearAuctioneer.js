@@ -69,7 +69,7 @@ module.exports = function (event) {
             let freeze = account.addr;
             // Specified address can revoke user asset holdings and send 
             // them to other addresses    
-            let clawback = account.addr;
+            let clawback = undefined;
 
             // signing and sending "txn" allows "addr" to create an asset
             let txn = algosdk.makeAssetCreateTxnWithSuggestedParams(

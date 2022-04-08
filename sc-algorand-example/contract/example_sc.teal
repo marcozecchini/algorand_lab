@@ -27,3 +27,4 @@ btoi
 int 1000
 >=
 &&
+return

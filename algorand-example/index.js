@@ -16,9 +16,7 @@ const port = '';
 const token = {
     'X-API-Key': 'F9I45UDrFb9FuoYhohD35A2Tcfq0mnZ5cTuG81x9',
 }
-const postHeader = {    
-    'content-type' : 'application/x-binary'
-}
+
 
 //instantiate the algod wrapper
 let algodclient = new algosdk.Algodv2(token, baseServer, port); 
